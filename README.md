@@ -2,7 +2,9 @@
 
 官方示例中Android平台的两个Hello World编译后项目，整个过程坑爹一坨坨。
 
-Android平台官方文档页为：[http://trac.pjsip.org/repos/wiki/Getting-Started/Android](http://trac.pjsip.org/repos/wiki/Getting-Started/Android)
+Android平台官方文档页为：
+
+[http://trac.pjsip.org/repos/wiki/Getting-Started/Android](http://trac.pjsip.org/repos/wiki/Getting-Started/Android)
 
 ### 编译环境 ###
 
@@ -14,10 +16,10 @@ Android平台官方文档页为：[http://trac.pjsip.org/repos/wiki/Getting-Star
 
 ### 经验和教训 ###
 
-简而言之就是一下几句话：
+简而言之就是以下几句话：
 
-- 别用Ubuntu 64位，使用32位
+- 别用Ubuntu 64位，使用32位，包括ndk
 
-- 别用ndk版本号高于r10，以及64位，使用r9和x86
+- 别用ndk版本号高于r10，使用r9以下版本
 
 以上，祝你好运。
