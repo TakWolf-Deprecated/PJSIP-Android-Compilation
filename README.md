@@ -18,8 +18,14 @@ Android平台官方文档页为：
 
 简而言之就是以下几句话：
 
+- 别用Windows编译
+
 - 别用Ubuntu 64位，使用32位，包括ndk
 
 - 别用ndk版本号高于r10，使用r9以下版本
+
+### 详细的说明 ###
+
+参看：[http://blog.takwolf.com/2014/12/03/pjsip-android-compilation](http://blog.takwolf.com/2014/12/03/pjsip-android-compilation)
 
 以上，祝你好运。
