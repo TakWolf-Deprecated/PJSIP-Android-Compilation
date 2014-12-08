@@ -28,4 +28,4 @@ Android平台官方文档页为：
 
 参看：[http://blog.takwolf.com/2014/12/03/pjsip-android-compilation](http://blog.takwolf.com/2014/12/03/pjsip-android-compilation)
 
-以上，祝你好运。
+以上，祝你好运~
