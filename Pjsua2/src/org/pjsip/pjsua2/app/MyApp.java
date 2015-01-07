@@ -216,7 +216,7 @@ class MyAccountConfig {
 			}
 		} catch (Exception e) {}
 	}
-	
+
 	public void writeObject(ContainerNode node) {
 		try {
 			ContainerNode acc_node = node.writeNewContainer("Account");
@@ -249,7 +249,7 @@ class MyApp {
 	private MyLogWriter logWriter;
 
 	private final String configName = "pjsua2.json";
-	private final int SIP_PORT  = 6000;
+	private final int SIP_PORT  = 5060; // TODO 6000
 	private final int LOG_LEVEL = 4;
 	
 	public void init(MyAppObserver obs, String app_dir) {
@@ -259,7 +259,7 @@ class MyApp {
 	public void init(MyAppObserver obs, String app_dir, boolean own_worker_thread) {
 		observer = obs;
 		appDir = app_dir;
-		
+
 		/* Create endpoint */
 		try {
 			ep.libCreate();
@@ -315,11 +315,13 @@ class MyApp {
 			System.out.println(e);
 		}
 
+		/* TODO
 		try {
 			ep.transportCreate(pjsip_transport_type_e.PJSIP_TRANSPORT_TCP, sipTpConfig);
 		} catch (Exception e) {
 			System.out.println(e);
 		}
+		*/
 		
 		/* Create accounts. */
 		for (int i = 0; i < accCfgs.size(); i++) {
